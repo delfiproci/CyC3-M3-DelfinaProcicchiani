@@ -131,13 +131,13 @@ function loadSprites() {
         });
 
         // Establecer las rutas después de configurar los manejadores
-        sprites.BOTTLE.src = 'assets/sprites/bottle.png';
-        sprites.HOPS.src = 'assets/sprites/hops.png';
-        sprites.LEMON.src = 'assets/sprites/lemon.png';
-        sprites.HAND.src = 'assets/sprites/hand.png';
-        sprites.ARGENTINA.src = 'assets/sprites/argentina.png';
-        sprites.FLY.src = 'assets/sprites/fly.png';
-        sprites.COIN.src = 'assets/sprites/coin.png';
+        sprites.BOTTLE.src = '/assets/sprites/bottle.png';
+        sprites.HOPS.src = '/assets/sprites/hops.png';
+        sprites.LEMON.src = '/assets/sprites/lemon.png';
+        sprites.HAND.src = '/assets/sprites/hand.png';
+        sprites.ARGENTINA.src = '/assets/sprites/argentina.png';
+        sprites.FLY.src = '/assets/sprites/fly.png';
+        sprites.COIN.src = '/assets/sprites/coin.png';
     });
 }
 
