@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salvemos la Birra Quilmes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Pantalla de inicio -->
+    <div id="start-screen" class="screen">
+        <div class="content">
+            <img src="assets/quilmes-logo.png" alt="Quilmes Logo" class="logo">
+            <h1>Salvemos la Birra Quilmes</h1>
+            <div class="instructions">
+                <p>🎮 Usa las flechas ← → para mover el vaso</p>
+                <p>✨ Atrapa botellas, lúpulo y banderas argentinas para sumar puntos</p>
+                <p>💰 ¡Atrapa las monedas doradas que caen más rápido!</p>
+                <p>⚠️ Evita los limones, las manos y las moscas</p>
+                <p>❤️ Tienes 3 vidas - ¡No dejes caer las botellas!</p>
+                <p>🎯 Objetivo: Consigue 100 puntos antes de perder todas las vidas</p>
+            </div>
+            <button id="startButton" class="btn">¡Comenzar!</button>
+        </div>
+    </div>
+
+    <!-- Pantalla de juego -->
+    <div id="game-screen" class="screen hidden">
+        <div class="game-header">
+            <div class="lives">
+                <span id="life1" class="life">❤️</span>
+                <span id="life2" class="life">❤️</span>
+                <span id="life3" class="life">❤️</span>
+            </div>
+            <div class="score">Puntaje: <span id="scoreValue">0</span></div>
+        </div>
+        <div class="game-area">
+            <canvas id="gameCanvas"></canvas>
+        </div>
+    </div>
+
+    <!-- Pantalla de resultado -->
+    <div id="end-screen" class="screen hidden">
+        <div class="content">
+            <h2 id="endMessage"></h2>
+            <div class="final-score">Puntaje final: <span id="finalScore">0</span></div>
+            <button id="restartButton" class="btn">Jugar de nuevo</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html> 
